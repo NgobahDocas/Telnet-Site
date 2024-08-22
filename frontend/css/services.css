@@ -1,0 +1,73 @@
+#header{
+    border-bottom: 10px solid orange;
+}
+
+#main-services{
+    background-image: url("../img/main-img.jpg");
+    height: 75vh;
+    width: 100%;   
+    background-repeat: no-repeat;
+    transition: ease-in-out 0.75s;
+}
+
+
+
+.service-h1{
+    color: white;
+    padding-top: 120px;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    user-select: none;
+    transition: ease-in-out 0.75s;
+
+}
+
+.service-h1 span{
+    color: orange;
+}
+
+marquee,
+#marqueeCCTV,
+#marqueeInstall{
+    color: white;
+    font-size: 30px;
+    margin-top: 100px;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-bottom: 100px;
+}
+
+.service-fieldset-main{
+    border: none;
+    text-align: center;
+    align-items: center;
+}
+
+.service-radio{
+    height: 21px;
+    width: 21px;
+}
+
+input[type="radio"]{
+    accent-color: orange;
+}
+
+#listService,
+#listServiceCyber,
+#listServiceSalesRepair,
+#listServiceConCareer{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    display: none;
+    transition: ease-in-out 0.75s;
+}
+
