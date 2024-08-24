@@ -50,6 +50,7 @@ internship.addEventListener("click", () => {
 });
 
 
+
 ///---------------- General | Telnet ----------------------------------
 
 intro.addEventListener('click', () => {
@@ -111,6 +112,7 @@ cyber.addEventListener("click", () => {
    listServiceConCareer.style.display = "none";
    marqueeCCTV.style.display = "none";
 });
+
 
 
 //----------------------------------------- sales | Telnet ------------------------------
@@ -234,4 +236,30 @@ CCTV.addEventListener('click', () => {
     marqueeInstall.style.display = "none";
     listServiceConCareer.style.display = "none";
     marqueeCCTV.style.display = "block";
+});
+
+
+// Appear Sections
+
+document.addEventListener("DOMContentLoaded", () => {
+    var internshipSection = document.getElementById("service-internship");
+    var cyberSection = document.getElementById("cyber-accessories");
+
+    var options = {
+        threshold: 0.55,
+    }
+
+    var observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting){
+                entry.target.classList.add("display");
+                observer.unobserve(entry.target);
+            }
+        })
+    }, options);
+
+    observer.observe(internshipSection);
+    observer.observe(cyberSection);
+
+    
 });

@@ -10,7 +10,18 @@
     transition: ease-in-out 0.75s;
 }
 
+#service-internship,
+#cyber-accessories{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.45s, transform 0.45s;
+}
 
+#service-internship.display,
+#cyber-accessories.display{
+    opacity: 1;
+    transform: none;
+}
 
 .service-h1{
     color: white;
@@ -70,4 +81,310 @@ input[type="radio"]{
     display: none;
     transition: ease-in-out 0.75s;
 }
+
+#service-internship{
+    background: white;
+    margin: 150px 0;
+    padding: 55px;
+    text-align: center;
+}
+
+.internship-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+}
+
+.internship-header h1{
+    background-color: orange;
+    height: 60px;
+    width: 60px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: snow;
+    font-size: 40px;
+    font-weight: 900;
+    margin-right: 7px;
+}
+
+.internship-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.academic-internship{
+    height: 500px;
+    width: auto;
+    border: 1px solid white;
+    box-shadow: 2px 4px 8px 5px rgb(235, 235, 235);
+    overflow: hidden;
+} 
+
+.academic-internship-img{
+    height: 250px;
+    width: 410px;
+    box-sizing: border-box;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.academic-internship h2{
+    padding: 10px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.academic-internship:hover img{
+    transform: scale(1.1);
+}
+
+.academic-internship p{
+    max-width: 370px;
+    padding: 1px 14px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+}
+
+.academic-internship button{
+    height: 40px;
+    width: 85%;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 30px;
+}
+
+.academic-internship button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.academic-internship button a span{
+    font-size: 25px;
+    padding-top: 2px;
+    margin-left: 5px;
+}
+
+.academic-internship button:hover{
+    opacity: 0.8;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}   
+
+.animate-intern{
+    position: absolute;
+}
+
+
+
+.animate-intern1{
+    width: 0;
+    height: 0;
+  }
+
+  .animate-intern1:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-left: 40px solid transparent;
+    border-top: 40px solid orange;
+    border-bottom: 40px solid transparent;
+    transform: translateY(-70%) translateX(-85%) rotate(45deg);
+    animation: bounce 3s infinite;
+}
+  
+@keyframes bounce {
+    0% {
+      transform: translateY(-70%) translateX(-75%) rotate(45deg);
+    }
+    50% {
+      transform: translateY(-70%) translateX(-25%) rotate(45deg);
+    }
+    100% {
+      transform: translateY(-70%) translateX(-75%) rotate(45deg);
+    }
+  }
+
+
+
+
+  /* Cyber Security  */
+#cyber-accessories{
+    background-color: snow;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.cyber-header{
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+}
+
+.line-general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 12px;
+}
+
+.line{
+    width: 100px;
+    border: 2px solid gray;
+}
+
+.line2{
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.catch-cyber{
+    color: orange;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.cyber-details-left h1{
+    font-size: 40px;
+    margin-bottom: 13px;
+    font-weight: 700;
+}
+
+.cyber-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cyber-details-left{
+    width: 48%;
+    margin-right: 60px;
+}
+
+.cyber-details-right{
+    width: 51%;
+    position: relative;
+}
+
+.details-cyber{
+    line-height: 1.3;
+    color: gray;
+    margin-bottom: 14px;
+}   
+
+.fa-solid,
+.fab{
+    background-color: orange;
+    color: white;
+    padding: 24px;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-right: 45px;
+    vertical-align: top;
+    margin-top: -27px;
+}
+
+.cyber-content-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cyber-content-1-sec1 h3{
+    padding-top: 20px;
+}
+
+.cyber-content-1-sec1{
+    line-height: 1.7;
+    position: relative;
+}
+
+.dotted{
+    height: 100px;
+    border: 2px dotted orange;
+    position: absolute;
+    left: -85px;
+    top: 80px;
+}
+
+
+.book-cyber{
+    margin: 40px;
+    height: 50px;
+    width: 250px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.book-cyber a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.book-cyber a span{
+    font-size: 25px;
+}
+
+.book-cyber:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+.cyber-details-right-img1,
+.cyber-details-right-img2 {
+    margin-left: 120px;
+    height: 550px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    overflow: hidden;
+    background-size: cover;
+    z-index: 2;
+}
+
+.cyber-details-right-img2{
+    position: absolute;
+    top: -100px;
+    left: 220px;
+}
+
+.dots {
+    position: relative;
+    top: 0;
+    right: 30px;
+    width: 250px;
+    animation: bounce2 5s infinite;
+    z-index: 1;
+  }
+  
+  @keyframes bounce2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-60px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 
