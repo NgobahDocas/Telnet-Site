@@ -11,14 +11,18 @@
 }
 
 #service-internship,
-#cyber-accessories{
+#cyber-accessories,
+#salesComputer,
+#talentShow{
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.45s, transform 0.45s;
 }
 
 #service-internship.display,
-#cyber-accessories.display{
+#cyber-accessories.display,
+#salesComputer.display,
+#talentShow.display{
     opacity: 1;
     transform: none;
 }
@@ -172,11 +176,11 @@ input[type="radio"]{
     margin-left: 5px;
 }
 
-.academic-internship button:hover{
-    opacity: 0.8;
+/* .academic-internship button:hover{
     transition: ease-in-out 0.5s;
     cursor: pointer;
-}   
+    animation: change-bg 0.8s 1 alternate;
+}    */
 
 .animate-intern{
     position: absolute;
@@ -213,6 +217,32 @@ input[type="radio"]{
     }
   }
 
+  .academic-internship button:hover,
+  .book-cyber:hover {
+    transition: ease-in-out 0.6s;
+    cursor: pointer;
+    animation: change-bg 0.8s 1 alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change-bg {
+    0% {
+        background-color: orange;
+    }
+    25% {
+        background-color: chocolate;
+    }
+    50% {
+        background-color: black;
+        color: orange;
+    }
+    75% {
+        background-color: rgb(173, 72, 72);
+    }
+    100% {
+        background-color: orangered;
+    }
+}
 
 
 
@@ -326,6 +356,7 @@ input[type="radio"]{
     background-color: orange;
     border: 1px solid orange;
     border-radius: 10px;
+    transition: ease-in-out 0.6s;
 }
 
 .book-cyber a{
@@ -338,11 +369,6 @@ input[type="radio"]{
 
 .book-cyber a span{
     font-size: 25px;
-}
-
-.book-cyber:hover{
-    opacity: 0.8;
-    cursor: pointer;
 }
 
 
@@ -388,3 +414,178 @@ input[type="radio"]{
   }
 
 
+  /* Sales of Computers  */
+
+#salesComputer{
+    margin-top: 150px;
+    background-color: snow;
+    padding: 80px 80px;
+}
+
+.sale-des{
+    margin: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+}
+  
+swiper-container {
+    width: 92%;
+    height: 80vh;
+    box-shadow: 4px 8px 22px 13px lightgray;
+    margin: 50px 0;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid gray;
+    overflow: hidden;
+    image-rendering: auto;
+    background-position: center center;
+}
+
+
+  swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    
+
+
+  /* Talent show  */
+
+  #talentShow{
+    margin: 110px 0;
+    padding: 60px;
+    background-image: url("../img/cyber3.webp");
+    width: auto;
+    height: 70vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  #talentShow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    z-index: 1;
+}
+
+#talentShow > * {
+    position: relative;
+    z-index: 2; 
+}
+
+.talent-show-left-reach1-details-diff{
+    border: 2px solid white;
+    text-align: center;
+    padding: 25px 15px 30px 15px;
+    width: 300px;
+    height: 120px;
+    justify-content: center;
+    line-height: 1.6;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.talent-show-left-reach1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.talent-show-left{
+    width: 50%;
+    padding-top: 40px;
+}
+
+.talent-show-right{
+    width: 50%;
+}
+
+.talent-show-left-reach1-details{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.talent-show-left-reach1-details-diff p{
+    font-size: 20px;
+
+}
+
+.talent-show-left-reach1-details-diff:hover{
+    transition: ease-in-out 0.7s;
+    cursor: text;
+    animation: border-animate 3s infinite;
+}
+
+@keyframes border-animate {
+    0%{
+        border-color: white;
+    }
+    10%{
+        border-color: lime;
+    }
+    20%{
+        border-color: peachpuff;
+    }
+    30%{
+        border-color: violet;
+    }
+    40%{
+        border-color: palegoldenrod;
+    }
+    50%{
+        border-color: salmon;
+    }
+    60%{
+        border-color: brown;
+    }
+    70%{
+        border-color: gold;
+    }
+    80%{
+        border-color: chocolate;
+    }
+    90%{
+        border-color: orangered;
+    }
+    100%{
+        border-color: orange;
+    }
+    
+}
+
+.place{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+    margin-top: -10px;
+}

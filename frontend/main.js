@@ -244,6 +244,8 @@ CCTV.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", () => {
     var internshipSection = document.getElementById("service-internship");
     var cyberSection = document.getElementById("cyber-accessories");
+    var salesComputer = document.getElementById("salesComputer");
+    var talentShow = document.getElementById("talentShow");
 
     var options = {
         threshold: 0.55,
@@ -260,6 +262,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(internshipSection);
     observer.observe(cyberSection);
+    observer.observe(salesComputer);
+    observer.observe(talentShow);
 
     
 });
+
+
