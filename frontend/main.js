@@ -276,6 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var cyberSection = document.getElementById("cyber-accessories");
     var salesComputer = document.getElementById("salesComputer");
     var talentShow = document.getElementById("talentShow");
+    var serviceRemaining = document.getElementById("service-remaining");
 
     var options = {
         threshold: 0.45,
@@ -293,6 +294,7 @@ document.addEventListener('DOMContentLoaded', function() {
     observer2.observe(internshipSection);
     observer2.observe(cyberSection);
     observer2.observe(salesComputer);
+    observer2.observe(serviceRemaining);
     observer2.observe(talentShow);
 
 
