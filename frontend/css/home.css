@@ -1,0 +1,793 @@
+
+
+/* HOME  */
+#newletter,
+#footer,
+#team,
+#testimony,
+#free_style{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.45s, transform 0.45s;
+}
+
+#newletter.display,
+#footer.display,
+#team.display,
+#testimony.display,
+#free_style.display{
+    opacity: 1;
+    transform: none;
+}
+
+
+
+#home_main {
+    width: auto;
+    background-image: url(../img/cyber3.webp);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    transition: ease-in-out 0.5s;
+}
+
+#home_main::before{
+    content: "";
+    position: absolute;
+    background: rgb(0, 0, 0, 0.76);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+}
+
+#home_main > *{
+    z-index: 2;
+    color: white;
+    position: relative;
+    text-align: left;
+    padding: 80px;
+}
+
+#home_main h1{
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: -45px;
+    letter-spacing: 3px;
+    user-select: none;
+    color: orange;
+    width: 60%;
+    animation: fadeInDown 1.5s ease-in-out;
+
+}
+
+#home_main p{
+    margin-top: -120px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    user-select: none;
+    width: 60%;
+    font-weight: 600;
+    line-height: 2;
+    animation: fadeInDown 1.5s ease-in-out;
+
+}
+
+.fa-arrow-right,
+.fa-arrow-left{
+    position: absolute;
+    border-radius: 50%;
+    font-size: 60px;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.fa-arrow-left{
+    top: 230%;
+    left: 650%;  
+}
+
+.fa-arrow-right{
+  top: 120%; 
+  left: 750%;
+}
+
+#home_main span:hover{
+    cursor: pointer;
+}
+
+
+/* Talent  */
+
+#talentShow{
+    background-image: url("../img/cyber4.webp");
+}
+
+
+
+/* NEWSLETTER */
+#newletter {
+    margin-top: 40px;
+    background-color: white;
+    text-align: center;
+    padding: 62px;
+    margin-bottom: 70px;
+  }
+  
+  #newletter h3 {
+    font-size: 50px;
+    color: orange;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+  }
+  
+  #newletter p {
+    margin-top: 35px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: gray;
+    letter-spacing: 2px;
+  }
+  
+  #news-content input {
+    height: 48px;
+    width: 40%;
+    border: 1px solid orange;
+    border-radius: 45px;
+    padding: 5px 31px;
+    position: relative;
+    color: rgb(73, 72, 72);
+    transition: ease-in-out 0.5s;
+    font-size: 17px;
+  }
+
+  #news-content input:focus {
+    outline: red;
+    border: 2px solid orange;
+  }
+  
+  #news-content button {
+    position: absolute;
+    height: 62px;
+    width: 250px;
+    font-size: 19px;
+    background-color: orange;
+    color: white;
+    border: 1px solid white;
+    border-radius: 42px;
+    right: 300px;
+    letter-spacing: 2px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  #news-content button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 22px;
+  }
+
+
+/* TEAM  */
+
+#team{
+  background: white;
+  margin: 120px 0;
+  padding: 75px;
+  text-align: center;
+  white-space: wrap;
+}
+
+.internship-header h1{
+  height: 70px;
+  width: 70px;
+  font-size: 50px;
+  user-select: none;
+}
+
+.our-team-img {
+  height: 200px;
+  width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  margin-top: 0px;
+  margin-right: 36px;
+}
+
+.team1 {
+  height: 250px;
+  width: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  line-height: 1.4;
+  box-shadow: 1px 8px 16px rgb(205, 203, 203);
+  margin-top: 80px;
+  margin-left: -40px;
+  border: 1px solid white;
+  transition: 0.45s ease-in-out;
+
+}
+
+.team1:hover {
+  margin-top: 60px;
+  transition: ease-in-out 0.7s;
+  cursor: text;
+  animation: border-animate 5s infinite;
+}
+
+.team-body h3 {
+  font-size: 25px;
+  font-weight: 800;
+  color: orange;
+  letter-spacing: 2px;
+}
+
+.team-body {
+  color: rgb(68, 68, 68);
+  text-align: left !important;
+  line-height: 2;
+}
+
+.team-body p:first-of-type{
+  color: gray;
+  letter-spacing: 1.1px;
+}
+
+.team-hr {
+  width: 70px;
+  line-height: 1;
+  border: 1px solid rgb(208, 188, 147);
+  background-color: rgb(208, 188, 147);
+  margin-bottom: 13px;
+}
+
+.social-media {
+  display: flex;
+  margin-top: 9px;
+}
+
+
+
+.team-para {
+  line-height: 2;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgb(75, 71, 71);
+}
+
+.team-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes border-animate {
+  0%{
+      border-color: white;
+  }
+  10%{
+      border-color: sandybrown;
+  }
+  20%{
+      border-color: peachpuff;
+  }
+  30%{
+      border-color: burlywood;
+  }
+  40%{
+      border-color: palegoldenrod;
+  }
+  50%{
+      border-color: salmon;
+  }
+  60%{
+      border-color: brown;
+  }
+  70%{
+      border-color: gold;
+  }
+  80%{
+      border-color: chocolate;
+  }
+  90%{
+      border-color: orangered;
+  }
+  100%{
+      border-color: orange;
+  }
+  
+}
+
+
+/*TESTIMONY*/
+#testimony {
+  background-color: snow;
+  margin: 100px 0;
+  padding: 80px 30px;
+}
+
+#testimony-main {
+  margin-bottom: 50px;
+}
+
+.cyber-header h1{
+  font-size: 76px !important;
+  letter-spacing: 5px;
+}
+
+.cyber-header{
+  margin-bottom: 50px;
+}
+
+
+.love {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 60px 30px;
+  
+}
+
+.rating input {
+  display: none;
+}
+
+.star-profile {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 14px;
+}
+
+.testimony1,
+.testimony2,
+.testimony3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  line-height: 1.6;
+  border: 1px solid lightgray;
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  line-height: 2;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: ease-in-out 0.6s;
+
+}
+
+.testimony1:hover,
+.testimony2:hover,
+.testimony3:hover {
+  margin-top: -10px;
+  box-shadow: 2px 4px 8px 4px lightgray;
+    animation: border-animate 5s infinite;
+    cursor: text;
+    border-radius: 10px;
+}
+
+.testimony1 h3 a,
+.testimony2 h3 a,
+.testimony3 h3 a {
+  color: orange;
+  font-size: 26px;
+    letter-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.testimony-p p{
+  color: rgb(55, 53, 53);
+  margin-bottom: 27px;
+}
+
+
+/* FREE STYLE IMAGES  */
+
+.free_container{
+  
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.free_container img{
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.84);
+  transition: all ease-in-out 0.5s;
+}
+
+.free_container img:hover{
+  width: 28%;
+}
+
+#free_style{
+  margin: 40px 0 80px 0;
+  background: snow;
+  padding: 80px;
+  margin-top: 120px !important;
+}
+
+
+/* --------------- RESPONSIVENESS ----------------- */
+
+@media (max-width: 1000px) {
+  
+  #home_main{
+    height: auto !important;
+  }
+
+  #home_main h1{
+    font-size: 40px !important;
+    width: 90% !important;
+    margin-top: 1px;
+  }
+  
+  #home_main a{
+    display: none !important;
+  }
+
+  #home_main p{
+    font-size: 22px;
+    width: 90%;
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  #home_main {
+      height: 60vh; 
+  }
+
+  #home_main > * {
+      padding: 40px; 
+  }
+
+  #home_main h1 {
+      font-size: 40px; 
+      width: 80%; 
+  }
+
+  #home_main p {
+      font-size: 18px; 
+      width: 80%; 
+      margin-top: -60px; 
+  }
+
+  .fa-arrow-left,
+  .fa-arrow-right {
+      font-size: 40px; 
+  }
+}
+
+@media (max-width: 480px) {
+  #home_main {
+      height: 50vh; 
+  }
+
+  #home_main h1 {
+      font-size: 30px; 
+      width: 90%; 
+  }
+
+  #home_main p {
+      font-size: 16px; 
+      width: 90%; 
+      margin-top: -30px; 
+  }
+
+  .fa-arrow-left,
+  .fa-arrow-right {
+      font-size: 30px; 
+  }
+
+  
+}
+
+
+@media (min-width: 769px) and (max-width: 1205px) {
+
+  #home_main{
+    padding-right: 50px ;
+  }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1250px) {
+
+  #home_main{
+    padding-right: 50px ;
+    height: auto !important;
+  }
+
+  #home_main h1{
+    font-size: 50px;
+    width: 96% !important;
+  }
+
+  #home_main p{
+    width: 96% !important;
+  }
+
+}
+
+
+
+/* Media Queries for Responsiveness Team */
+@media (max-width: 768px) {
+  #team {
+      padding: 40px; 
+  }
+
+  .team-para {
+      font-size: 18px; 
+  }
+
+  .team1 {
+      padding: 20px; 
+      margin: 40px 20px; 
+      max-width: 80%; 
+  }
+
+  .our-team-img {
+      height: 150px; 
+      width: 150px; 
+  }
+
+  .team-body h3 {
+      font-size: 22px; 
+  }
+}
+
+@media (max-width: 700px) {
+  .team1 {
+      max-width: 90%; 
+      display: flex;
+      flex-direction: column;
+      height: auto;
+  }
+
+  .team-body h3 {
+      font-size: 20px; 
+  }
+
+  .team-para {
+      font-size: 16px; 
+  }
+
+  
+
+  .our-team-img {
+      height: 120px; 
+      width: 120px; 
+  }
+
+  .internship-header h1{
+  height: 40px !important;
+  width: 40px;
+    font-size: 22px;
+    padding-top: 8px;
+    text-align: center;
+
+  } 
+
+  .internship-header{
+  margin-left: -30px;
+
+  }
+}
+
+
+@media (min-width: 701px) {
+  .team1 {
+      max-width: 90%; 
+      display: flex;
+      height: auto;
+  }
+
+  .team-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team2{
+    margin-left: -25px !important;
+  }
+
+  
+}
+
+@media (min-width: 1200px) {
+
+  .team-main{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .team2{
+    margin-left: 35px !important;
+  }
+
+}
+
+
+@media (max-width: 1100px) {
+  #talentShow{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  
+}
+
+
+/* testimoney  */
+
+@media (max-width: 768px) {
+  #testimony {
+      padding: 40px 20px; 
+  }
+
+  .cyber-header h1 {
+      font-size: 48px; 
+  }
+
+  .love {
+      margin: 60px;
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .testimony1,
+  .testimony2,
+  .testimony3 {
+      width: 100%; 
+      margin: 10px 0; 
+      padding: 20px;
+  }
+
+  .testimony1 h3 a,
+  .testimony2 h3 a,
+  .testimony3 h3 a {
+      font-size: 22px; 
+  }
+
+  .star-profile {
+      height: 25px; 
+      width: 25px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .cyber-header h1 {
+      font-size: 36px; 
+  }
+
+  .testimony1 h3 a,
+  .testimony2 h3 a,
+  .testimony3 h3 a {
+      font-size: 20px;  
+  }
+
+  .testimony-p p {
+      font-size: 16px;
+  }
+
+  .star-profile {
+      height: 20px; 
+      width: 20px; 
+  }
+}
+
+@media (min-width: 769px) {
+
+  .love{
+    margin-left: -30px;
+
+  }
+
+  .testimony2{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+  }
+
+  .testimony3{
+    display: none;
+  }
+
+}
+
+@media (min-width: 980px) {
+  .testimony3{
+    display: block;
+  }
+
+}
+
+
+
+/* news  */
+
+@media (max-width: 768px) {
+  #newletter h3 {
+      font-size: 36px; 
+  }
+
+  #newletter p {
+      font-size: 18px; 
+  }
+
+ 
+}
+
+@media (max-width: 700px) {
+
+  #newletter{
+    height: auto;
+  }
+
+ .subcribe{
+  position: relative;
+ }  
+  
+  #news-content input {
+      width: 90%;
+      
+  }
+
+  #news-content button {
+      width: 90%;
+      position: absolute;
+    top: 75px;
+    height: 50px;
+    left: 5%;
+
+  }
+}
+
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  #news-content button {
+    position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#news-content input {
+  width: 90% !important;  
+}
+
+.subcribe{
+  position: relative;
+ }  
+
+}
+
+
+
+
+
