@@ -1,0 +1,24 @@
+@media (max-width: 480px) {  
+    #all-blog h1 {
+        font-size: 36px !important; 
+    }
+  
+    #all-blog p {
+        font-size: 16px; 
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+  
+    #all-blog h1 {
+        font-size: 50px !important; 
+        text-align: center; 
+    }
+  
+    #all-blog p {
+       
+        font-size: 18px !important;
+        text-align: center;
+    }
+  }

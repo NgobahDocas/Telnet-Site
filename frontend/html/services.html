@@ -6,23 +6,57 @@
     <title>Services | Telnet Cameroon | Book Us</title>
     <link rel="stylesheet" href="../css/services.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../img/logo.png" />
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> -->
-</head>
+
 <body>
 
-    <!----------------------------- HEADER | TELNETCM ------------------------------------>
+  <!----------------------- HEADER  ------------------------>
 
-    <section id="header"></section>
+  <section id="header">
+    <div>
+        <img src="../img/logo.png" class="home_logo">
+        <i class="fa-solid fa-x" id="close" style="cursor: pointer; position: absolute; top: 57px; right: 70px; visibility: visible;"></i>
+        <i class="fa-solid fa-bars" id="menu" style="cursor: pointer; position: absolute; top: 57px; right: 70px; visibility: hidden;"></i>
+    </div>
+    <nav class="nav">
+        <ul>
+            <a href="/" >Home</a>
+            <a href="/about">About</a>
+            <a href="/services" style="color: gray;">Service</a>
+            <a href="/blog">Blog</a>
+            <a class="others" style="position: relative; cursor: pointer;">Pages 
+                <div class="dropdown">
+                    <a class="drop_a" href="/our_amazing_team">Our Team</a>
+                    <a class="drop_a" href="/our_events">Events</a>
+                    <a  class="drop_a" href="/beneficiaries">Beneficiaries</a>
+                    <a class="drop_a" href="/volunteerism">Volunteerism</a>
+                    <a class="drop_a" href="/our_projects"> Our Projects</a>
+                </div>
+              </a>
+            <a href="/contact">Contact</a>
+            <a href="/works">Works</a>
+            <button class="donate"><a href="/donate">Donate</a></button>
+        </ul>
+    </nav>
+   </section>
+        
 
-        <!----------------------------- Main Container | TELNETCM ------------------------------------>
+     
 
-    <section id="main-services">
+        <!----------------------------- Main Container | TELNET ------------------------------------>
+
+    <section id="main-services" style="position: relative;">
         <h1 class="service-h1" id="service-h1">
-            Amazing <span>SERVICES</span> of TELNETCM
+            TELNET Digital Literacy Initiative
         </h1>
+    
+        <button id="service-btn" class="book-cyber" style="animation: fadeInUp 1.5s ease-in-out; top: 60%; left: 40%; visibility: visible; position: absolute; margin-bottom: 0; margin-top: 14px;"><a href="#">Book Now <span>&rightarrow;</span> </a></button>
+
         <p id="service-content">
-          <marquee id="marquee" direction="left" behavior="scroll" width="100%" scrollamount="10" scrolldelay="180">TELNETCM offers outstanding services with a dedicated and experienced team to ensure your at most satisfaction.</marquee>
+          <marquee id="marquee" direction="left" behavior="scroll" width="100%" scrollamount="10" scrolldelay="180">TELNET Digital Literacy Initiative with vast experienced gained over the years.</marquee>
+
 
           <div id="listService" >
             <h3>Academic Internship Programs</h3>
@@ -34,30 +68,24 @@
             <div>
                 <h3>Network Security Specialist</h3>
                 <h3>Security Engineering</h3>
-                <h3>Incident Response Analyst</h3>
             </div>
             <br>
             <div>
                 <h3> Cryptography</h3>
                 <h3>Information Security Engineering</h3>
-                <h3>IAM Specilist</h3>
             </div>
           </div>
 
 
-          <div id="listServiceSalesRepair" >
-            <h3>Sales and Repair of Laptops(All Brands)</h3>
-            <h3>sales of accessories</h3>
-          </div>
+          
 
           <marquee style="display: none;" id="marqueeInstall" direction="left" behavior="scroll" width="100%" scrollamount="10" scrolldelay="180">Secure, stable and efficient installation of electrical supply and appliances.</marquee>
 
           <div id="listServiceConCareer" >
-            <h3>Sales and Repair of Laptops(All Brands)</h3>
-            <h3>sales of accessories</h3>
+            <h3>Enlighten the youth on the vast variety of careers</h3>
+            <h3>Clear Your Worries </h3>
           </div>
 
-          <marquee style="display: none;" id="marqueeCCTV" direction="left" behavior="scroll" width="100%" scrollamount="10" scrolldelay="180">Quality Cameras and swift installation of these camera's to homes, offices, hotels, companies, etc..</marquee>
 
 
         </p>
@@ -65,12 +93,12 @@
             <input id="service-general" type="radio" class="service-radio" name="service-radio" checked>
             <input id="internship" type="radio" class="service-radio" name="service-radio" style="margin-left: 5px; margin-right: 5px;">
             <input id="cyber" type="radio" class="service-radio" name="service-radio">
-            <input id="sales" type="radio" class="service-radio" name="service-radio" style="margin-left: 5px; margin-right: 5px;">
             <input id="installationElect" type="radio" class="service-radio" name="service-radio">
             <input id="carrierConsult" type="radio" class="service-radio" name="service-radio" style="margin-left: 5px; margin-right: 5px;">
-            <input id="CCTV" type="radio" class="service-radio" name="service-radio">
         </fieldset>
     </section>
+
+    <!----------------- INTERNSHIP  ----------------------------->
 
     <section id="service-internship">
       <div class="internship-header">
@@ -88,38 +116,46 @@
       <div class="internship-container">
         <div class="academic-internship" style="margin-right: 30px;">
           <img src="../img/intership (1).jpg" alt="Academic internship" class="academic-internship-img">
-          <h2>&star; Software Academic &star;  <br>&star;  Internship &star;</h2>
-          <div class="animate-intern">
-            <p class="animate-intern1"></p>
-            <p class="animate-intern2"></p>
+          <div class="immediate">
+            <h2>&star; Software Dev &star;  <br>&star;  Internship &star;</h2>
+            <div class="animate-intern">
+              <p class="animate-intern1"></p>
+              <p class="animate-intern2"></p>
+            </div>
+            <p>Internship opportunity which is made up of all software development. It's main branches are web application development and mobile app development.</p>
+            <button><a href="#">Apply Now <span> &rightarrow;</span></a></button>
+          
           </div>
-          <p>Internship opportunity which is made up of all software development. It's main branches are web application development and mobile app development.</p>
-          <button><a href="#">Apply Now <span> &rightarrow;</span></a></button>
         </div>
         
         <div class="academic-internship" style="margin-right: 30px;">
           <img src="../img/intership (3).jpg" alt="Academic internship" class="academic-internship-img">
-          <h2>&star; Networking Professional &star;  <br>&star;  Internship &star;</h2>
-          <div class="animate-intern">
-            <p class="animate-intern1"></p>
-            <p class="animate-intern2"></p>
+          <div class="immediate">
+            <h2>&star; Networking  &star;  <br>&star;  Internship &star;</h2>
+            <div class="animate-intern">
+              <p class="animate-intern1"></p>
+              <p class="animate-intern2"></p>
+            </div>
+            <p>Networking Internship opportunity which is made up of all networking branches and fields . We train you from scratch and ensure adequate mastery of the field .</p>
+            <button><a href="#">Apply Now <span> &rightarrow;</span></a></button>
+          
           </div>
-          <p>Networking Internship opportunity which is made up of all networking branches and fields . We train you from scratch and ensure adequate mastery of the field .</p>
-          <button><a href="#">Apply Now <span> &rightarrow;</span></a></button>
-        </div>
+       </div>
 
         <div class="academic-internship" style="margin-right: 30px;">
           <img src="../img/intership (5).jpg" alt="Academic internship" class="academic-internship-img">
-          <h2>&star; Software Professional &star;  <br>&star;  Internship &star;</h2>
+          <div class="immediate">
+            <h2>&star; Cyber Security &star;  <br>&star;  Internship &star;</h2>
           <div class="animate-intern">
             <p class="animate-intern1"></p>
             <p class="animate-intern2"></p>
           </div>
-          <p>Professional Internship opportunity software developments. It consist of main branches are web application development and mobile application development.</p>
+          <p>Protecting systems, networks and programs from digital attacks. Cybersecurity aims to protect computer systems, applications, devices, data, and financial assets.</p>
           <button><a href="#">Apply Now <span> &rightarrow;</span></a></button>
+        
+          </div>
         </div>
 
-       
       </div>
     </section>
 
@@ -181,7 +217,7 @@
                 </div>
             </div>
 
-            <button class="book-cyber"><a href="../html/services.html">Book Now <span>&rightarrow;</span> </a></button>
+            <button class="book-cyber"><a href="#">Book Now <span>&rightarrow;</span> </a></button>
           </div>
         </div>
         <div class="cyber-details-right">
@@ -191,35 +227,8 @@
         </div>
       </div>
     </section>
-  
 
-    <section id="salesComputer">
-      <div class="cyber-header">
-        <h1> Sales Of Computers & Accessories </h1>
-        <div class="line-general" style="margin-top: 18px;">
-          <hr class="line" style="width: 180px;">
-          <hr class="line line2" style="width: 280px; border-color: rgb(101, 101, 101);">
-          <hr class="line" style="width: 180px;">
-        </div>
-      </div>
-      <p class="sale-des">
-        At TELNETCM you can get good and high quality laptops alongside other accessories at a very convenient and favorable price. Also, you are have a steady guarantee valid until the due date expires. The computers are top notch and varies from MacBook, Dell, Lenovo, Hp and the list continue.
-      </p>
-      <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-      loop="true">
-      <swiper-slide><img src="../img/lap2.jpg"></swiper-slide>
-      <swiper-slide><img src="../img/lap4.jpg"></swiper-slide>
-      <swiper-slide><img src="../img/lap3.jpg"></swiper-slide>
-      <swiper-slide><img src="../img/lap10.jpg"></swiper-slide>
-      <swiper-slide><img src="../img/lap6.jpg"></swiper-slide>
-      <swiper-slide><img src="../img/lap1.jpg"></swiper-slide>
-      <swiper-slide><img src="../img/lap7.jpg"></swiper-slide>
-      <swiper-slide><img src="../img/lap8.jpg"></swiper-slide>
-      <swiper-slide><img src="../img/lap9.jpg"></swiper-slide>
-    </swiper-container>
-    <button class="book-cyber place"><a href="../html/services.html"> Place An Order <span>&rightarrow;</span> </a></button>
 
-    </section>
 
     <!-------------------- Talent and experience show case  -------------------->
 
@@ -300,7 +309,7 @@
     </section>
 
 
-    <!--------------------------------------- Remaining Services  ------------------------------------->
+    <!--------------------------------------- NGO Services  ------------------------------------->
 
     <section id="service-remaining">
       <div class="cyber-header">
@@ -311,54 +320,293 @@
           <hr class="line" style="width: 100px;">
         </div>
       </div>
-      <div class="service-remaining-container">
-        <div class="service-remaining-container-details">
+      <div class="service-remaining-container the_main_other">
+        <div class="service-remaining-container-details the_one">
           <i class="fa-solid fa-user-doctor"></i>
           <h3>IT consultation</h3>
           <p> In close collaboration with you, our team of seasoned experts will evaluate your existing infrastructure, pinpoint any problems, and create a customized plan to improve productivity, increase efficiency, and unleash your full digital potential. </p>
-          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Book Now <span>&rightarrow;</span> </a></button>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
         </div>
-        <div class="service-remaining-container-details" style="margin-left: 30px; margin-right: 30px;">
+        <div class="service-remaining-container-details the_two" style="margin-left: 30px; margin-right: 30px;">
           <i class="fa-solid fa-camera-retro"></i>
-          <h3>CCTV Camera </h3>
-          <p> Use our skilled CCTV camera installation services to increase your security. To give you comprehensive surveillance coverage, our team of security experts will evaluate your demands, create a personalized CCTV system, and install premium cameras with skill.</p>
-          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Book Now <span>&rightarrow;</span> </a></button>
+          <h3>Career Orientation </h3>
+          <p> Manner of approach and view of the vast variety of careers, which is a driving force behind their career choices. Enlightenment of the career choices and opportunities to advance their career so as to make better decisions concerning their future. </p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
         </div>
-        <div class="service-remaining-container-details">
+        <div class="service-remaining-container-details the_one">
           <i class="fa-solid fa-bolt-lightning"></i>
-          <h3>Electrical Installation</h3>
-          <p> With our skilled electrical installation services, you can make sure that your electrical systems are dependable and safe. From design to installation, our skilled & certified electricians will handle every part of your electrical project to meet industry standards.</p>
-          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Book Now <span>&rightarrow;</span> </a></button>
+          <h3>ICT For Dev</h3>
+          <p> ICT4D or Information and Communication Technology for Development, refers to leveraging technology to address social, economic, and environmental challenges in developing regions. It aims to improve access to information, enhance education.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
         </div>
       </div>
-      <div class="service-remaining-container">
-        <div class="service-remaining-container-details">
+      <div class="service-remaining-container the_main_other">
+        <div class="service-remaining-container-details the_one">
           <i class="fa-solid fa-map-location"></i>
           <h3>Tech Outreach</h3>
           <p>We connect you with the newest trends in the industry, creative solutions, and knowledgeable insights. Our tech outreach programs, which range from workshops to one-on-one consultations, provide you technologies for better decisions making.</p>
-          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Book Now <span>&rightarrow;</span> </a></button>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
         </div>
-        <div class="service-remaining-container-details" style="margin-left: 30px; margin-right: 30px;">
+        <div class="service-remaining-container-details the_two" style="margin-left: 30px; margin-right: 30px;">
           <i class="fa-solid fa-money-check-dollar"></i>
-          <h3>Low Cost Solutions</h3>
-          <p> Reach your objectives without going over budget. Our budget-friendly options are made to give you the technology you require at a rate you can afford. We'll assist you in striking the ideal balance between price and quality for software, or IT services.</p>
-          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Book Now <span>&rightarrow;</span> </a></button>
+          <h3>IT Solutions</h3>
+          <p> IT solutions encompass a range of services and technologies designed to meet organizational needs. These include software development, cloud computing, cybersecurity, data management, and network infrastructure. By integrating innovative tools.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
         </div>
-        <div class="service-remaining-container-details">
+        <div class="service-remaining-container-details the_one">
           <i class="fa-solid fa-code-branch"></i>
           <h3>Digital Literacy</h3>
           <p> With the help of our digital literacy training, empower your staff. We provide all-inclusive programs to improve digital competencies, ranging from fundamental computer abilities to sophisticated software and application utilization.</p>
-          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Book Now <span>&rightarrow;</span> </a></button>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+      </div>
+
+
+
+
+      <div class="service-remaining-container the_main">
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h3>IT consultation</h3>
+          <p> In close collaboration with you, our team of seasoned experts will evaluate your existing infrastructure, pinpoint any problems, and create a customized plan to improve productivity, increase efficiency, and unleash your full digital potential. </p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_thress" style="margin-left: 30px; margin-right: 30px;">
+          <i class="fa-solid fa-camera-retro"></i>
+          <h3>Career Orientation </h3>
+          <p> Manner of approach and view of the vast variety of careers, which is a driving force behind their career choices. Enlightenment of the career choices and opportunities to advance their career so as to make better decisions concerning their future. </p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+       
+      </div>
+      <div class="service-remaining-container the_main">
+        <div class="service-remaining-container-details the_thress" style="margin-right: 20px;">
+          <i class="fa-solid fa-map-location"></i>
+          <h3>Tech Outreach</h3>
+          <p>We connect you with the newest trends in the industry, creative solutions, and knowledgeable insights. Our tech outreach programs, which range from workshops to one-on-one consultations, provide you technologies for better decisions making.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-code-branch"></i>
+          <h3>Digital Literacy</h3>
+          <p> With the help of our digital literacy training, empower your staff. We provide all-inclusive programs to improve digital competencies, ranging from fundamental computer abilities to sophisticated software and application utilization.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+      </div>
+
+      <div class="service-remaining-container the_main">
+        <div class="service-remaining-container-details the_thress" style="margin-left: 30px; margin-right: 30px;">
+          <i class="fa-solid fa-money-check-dollar"></i>
+          <h3>IT Solutions</h3>
+          <p> IT solutions encompass a range of services and technologies designed to meet organizational needs. These include software development, cloud computing, cybersecurity, data management, and network infrastructure. By integrating innovative tools.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <h3>ICT For Dev</h3>
+          <p> ICT4D or Information and Communication Technology for Development, refers to leveraging technology to address social, economic, and environmental challenges in developing regions. It aims to improve access to information, enhance education.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+      </div>
+
+
+
+
+      <div class="last_main">
+        <div class="service-remaining-container-details the_thress " style="margin-left: 30px; margin-right: 30px;">
+          <i class="fa-solid fa-money-check-dollar"></i>
+          <h3>IT Solutions</h3>
+          <p> IT solutions encompass a range of services and technologies designed to meet organizational needs. These include software development, cloud computing, cybersecurity, data management, and network infrastructure. By integrating innovative tools.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <h3>ICT For Dev</h3>
+          <p> ICT4D or Information and Communication Technology for Development, refers to leveraging technology to address social, economic, and environmental challenges in developing regions. It aims to improve access to information, enhance education.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+
+        <div class="service-remaining-container-details the_thress" style="margin-right: 20px;">
+          <i class="fa-solid fa-map-location"></i>
+          <h3>Tech Outreach</h3>
+          <p>We connect you with the newest trends in the industry, creative solutions, and knowledgeable insights. Our tech outreach programs, which range from workshops to one-on-one consultations, provide you technologies for better decisions making.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+        
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-code-branch"></i>
+          <h3>Digital Literacy</h3>
+          <p> With the help of our digital literacy training, empower your staff. We provide all-inclusive programs to improve digital competencies, ranging from fundamental computer abilities to sophisticated software and application utilization.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
+        </div>
+
+        
+        
+        <div class="service-remaining-container-details the_thress">
+          <i class="fa-solid fa-code-branch"></i>
+          <h3>Tech Outreach</h3>
+          <p> With the help of our digital literacy training, empower your staff. We provide all-inclusive programs to improve digital competencies, ranging from fundamental computer abilities to sophisticated software and application utilization.</p>
+          <button class="book-cyber" style="margin-bottom: 0; margin-top: 14px;"><a href="../html/services.html">Learn More <span>&rightarrow;</span> </a></button>
         </div>
       </div>
     </section>
 
 
+<!------------------------ FOOTER  ----------------------->
+
+    <section id="footer">
+      <div class="footer-content">
+          <div class="Ease-details">
+              <h2>TELNETCM </h2>
+              <p>Tared Maingo, <br> Buea, <br> South-west, <br> Cameroon</p>
+              <p style="padding-top: 11px;"><b>Phone:</b> 679 817 021</p>
+              <p style="margin-top: 14px;"><b>Email:</b> telnet@gmail.com</p>
+          </div>
+          <div class="useful-links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="/">Home</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;" ></i><a href="/about">About</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="/services">Service</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="/works">Works</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="/blog">Blog</a></li>
+                <li><i class="fa-solid fa-greater-than arrow" style=" left: -95px !important;"></i><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="our-service">
+            <h4>Our Services</h4>
+            <ul>
+                <li><i class="fa-solid fa-greater-than arrow2" ></i><a href="#service-scroll">IT consultation</a></li>
+                <li><i class="fa-solid fa-greater-than arrow2 extra1" ></i><a href="#service-scroll">Career Orientation </a></li>
+                <li><i class="fa-solid fa-greater-than arrow2 extra2" ></i><a href="#service-scroll">ICT For Dev</a></li>
+                <li><i class="fa-solid fa-greater-than arrow2" ></i><a href="#service-scroll">Tech Outreach</a></li>
+                <li><i class="fa-solid fa-greater-than arrow2 extra4" ></i><a href="#service-scroll">IT Solutions</a></li>
+                <li><i class="fa-solid fa-greater-than arrow2" ></i><a href="#service-scroll">Digital Literacy</a></li>
+            </ul>
+        </div>
+          <div class="our-social">
+              <h4>Our Social Network</h4>
+              <p>You can get to TELNETCM on social media and creat a valuable network to solve or put to rest any of youur worries through</p>
+              <div class="social-img">
+                  <a href="#contact-us"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#contact-us"><i class="fa-brands fa-whatsapp"></i></a>
+                  <a href="#contact-us"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#contact-us"><i class="fa-brands fa-linkedin"></i></a>
+
+              </div>
+             
+
+          </div>
+          <div class="map">
+              <h4>Our Map</h4>
+              <iframe style="height: 240px !important; box-shadow: 2px 4px 8px lightgray; margin-top: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.3110097092044!2d9.290450474890406!3d4.159127295814693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106131ecc8a74831%3A0x69b4de387a1c28d7!2sMalingo%20Street%2C%20Buea!5e0!3m2!1sen!2scm!4v1725528665425!5m2!1sen!2scm" frameborder="0" width="100%" height="100%"></iframe>
+          </div>
+      </div>
+
+      <!-- TABLET FOOTER  -->
+
+      <div class="tablet_footer">
+        <div class="tablet_footer_first">
+            <div class="Ease-details">
+                <h2>TELNETCM </h2>
+                <p><b>Address</b>: Tared Maingo, <br> Buea, <br> South-west, <br> Cameroon</p>
+                <p style="padding-top: 11px;"><b>Phone:</b> 679 817 021</p>
+                <p style="margin-top: 14px;"><b>Email:</b> telnet@gmail.com</p>
+            </div>
+
+            <div class="useful-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="/">Home</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="/about">About</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="/services">Service</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="/works">Works</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="/blog">Blog</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow"></i><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="our-service">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><i class="fa-solid fa-greater-than arrow2"></i><a href="#service-scroll">IT consultation</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2 extra1"></i><a href="#service-scroll">Career Orientation </a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2 extra2"></i><a href="#service-scroll">ICT For Dev</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2"></i><a href="#service-scroll">Tech Outreach</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2 extra4"></i><a href="#service-scroll">IT Solutions</a></li>
+                    <li><i class="fa-solid fa-greater-than arrow2"></i><a href="#service-scroll">Digital Literacy</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="tablet_footer_second">
+            <div class="our-social">
+                <h4>Our Social Network</h4>
+                <p>You can get to TELNETCM on social media and creat a valuable network to solve or put to rest any of youur worries through</p>
+                <div class="social-img">
+                    <a href="#contact-us"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#contact-us"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#contact-us"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#contact-us"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="map">
+                <h4>Our Map</h4>
+                <iframe style="box-shadow: 2px 4px 8px lightgray; margin-top: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.3110097092044!2d9.290450474890406!3d4.159127295814693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106131ecc8a74831%3A0x69b4de387a1c28d7!2sMalingo%20Street%2C%20Buea!5e0!3m2!1sen!2scm!4v1725528665425!5m2!1sen!2scm" frameborder="0" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+
+</div>
+
+      <div class="footer-conclude">
+          <p>@Copyright TDI, All Rights Reserved</p>
+          <p><em style="color: rgb(248, 233, 201);">Designed by:</em> <strong>Dev Intern, TelnetCm</strong></p>
+      </div>  
+  </section>
 
     
-    <script src="../main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
 
+
+    <script>
+      const othersLink = document.querySelector('.others');
+      const dropdown = document.querySelector('.dropdown');
+
+      othersLink.addEventListener('mouseenter', () => {
+          dropdown.style.display = 'flex';
+      });
+
+
+      dropdown.addEventListener('mouseleave', () => {
+          dropdown.style.display = 'none';
+      });
+
+
+        // Responsiveness
+  const close = document.getElementById('close');
+  const menu = document.getElementById('menu');
+  const navBar = document.querySelector('.nav');
+  const header = document.getElementById('header');
+
+
+  menu.addEventListener('click', () => {
+    menu.style.visibility = 'hidden';
+    close.style.visibility = 'visible';
+    navBar.style.visibility = 'visible';
+    header.style.height = 'auto';
+  })
+
+  close.addEventListener('click', () => {
+    menu.style.visibility = 'visible';
+    close.style.visibility = 'hidden';
+    navBar.style.visibility = 'hidden';
+    header.style.height = '50px';    
+  })
+  
+  </script>
 
 </body>
 </html>

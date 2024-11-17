@@ -1,0 +1,59 @@
+#apply_volunteer{
+    padding-top: 120px;
+    padding-left: 30px;
+}
+
+#apply_volunteer,
+#why_choose_us,
+#footer,
+#workds_group{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.45s, transform 0.45s;
+}
+
+
+#apply_volunteer.display,
+#why_choose_us.display,
+#footer.display,
+#workds_group.display{
+    opacity: 1;
+    transform: none;
+}
+
+/* RESPONSIVENESS  */
+
+
+
+  
+
+  @media (max-width: 1260px) {
+  
+   #dob{
+    left: 200px !important;
+   }
+   
+  }
+
+  @media (max-width: 1000px) {
+  
+
+    .legend{
+        font-size: 25px !important;
+    }
+
+    .comment-input{
+        display: flex !important;
+        flex-direction: column !important;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .comment-input input{
+        width: 100%;
+    }
+
+    .topnotcg{
+        margin-left: 0 !important;
+    }
+   }
